@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectWorkspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_mpw.xsd">
+
+  <SchemaVersion>1.0</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <WorkspaceName>WorkSpace</WorkspaceName>
+
+  <project>
+    <PathAndName>..\src\Sample_Loding_Assembly\Project\Sample_Loding_Assembly.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\src\Card_Transfer_Assembly\Project\Card_Transfer_Assembly.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\src\Liquid_Transfer_Assembly\Project\Liquid_Transfer_Assembly.uvprojx</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
+  </project>
+
+  <project>
+    <PathAndName>..\src\Blending&amp;Cleaning_Assembly\Project\Blending&amp;Cleaning_Assembly.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\src\SW&amp;LED_Assembly\Project\SW&amp;LED_Assembly.uvprojx</PathAndName>
+  </project>
+
+</ProjectWorkspace>

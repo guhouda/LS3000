@@ -1,0 +1,68 @@
+配置用户名：git config --global user.name "用户名"
+配置邮箱：git config --global user.email "邮箱"
+查看配置信息：git config --list
+创建库：mkdir 库名
+文件内初始化git：git init
+新建文件：touch '文件'
+
+删除文件：git rm 'index.html'
+查看状态：git status
+查看文件修改的内容：git diff readme.txt
+查看文件修改历史记录：git log    只查看每次修改的版本号：git log –pretty=oneline
+回退文件版本：git reset --hard HEAD~num（num为回退几个版本）
+查看文件内容：cat '文件名'
+获取版本号：git reflog
+恢复到某个版本号：git reset --hard ‘版本号’
+
+clone远程仓库：git clone 仓库名 
+git clone -b 分支名 仓库名
+将文件添加到暂存区：git add .
+将文件从暂存区提交仓库：git commit -m '创建文件'
+git log
+转到develop分支：git checkout 2a8a57dec -b develop
+push到develop分支：git push origin develop
+转到master分支：git checkout master
+查看分支：git branch
+
+
+删除远程仓库文件
+1.git rm -r hello.c
+2.git commit -m "删除hello.c"
+3.git push
+
+删除分支new
+1.切换到主分支master：git checkout master
+2.删除远程仓库分支new:git branch -d new或者git push --delete new
+3.删除本地分支new:git branch -D new
+
+创建分支panda：git brach panda
+1) 切换到基础分支，如主干
+git checkout master
+2）创建并切换到新分支
+git checkout -b panda
+git branch可以看到已经在panda分支上
+3)更新分支代码并提交
+git add .
+git commit -m "init panda"
+git push origin panda
+4)在git代码管理界面经可以看到panda分支了，成功~~
+
+显示所有标签：git tag
+创建一个含附注类型的标签非常简单，用 -a （译注：取 annotated 的首字母）指定标签名字即可：git tag -a v1.4 -m 'my version 1.4'
+打轻量标签：git tag v1.4
+查看相应标签的版本信息：git show v1.4
+推送指定标签：git push origin v2.0
+删除标签：git tag -d v2.0
+删除远程标签：git push origin --delete tag 2.0
+git log --pretty=oneline //查看当前分支的提交历史，里面包含 commit id
+git tag -a <tagName> <commitId>
+clone指定分支的代码：git clone -b 1.3.5.12-FINA_360_V5.0 --depth=1 http://192.168.1.10/op/git/ls-1100-c.git
+
+回到前一个提交的版本吧，依次键入下述指令：
+ git reset --hard HEAD
+ git reset --hard HEAD^
+ git log
+
+回到最新版本
+git reflog
+git reset --hard ad2080c（ad2080c为最新版本号）
